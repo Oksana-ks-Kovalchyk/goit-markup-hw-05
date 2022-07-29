@@ -273,11 +273,9 @@ footer {
     background-color: transparent;
 
     border: 1px solid transparent;
+    border-radius: 4px;
 
     cursor: pointer;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 
     transition: color var(--anim-slow), background-color var(--anim-slow);
 }
@@ -286,6 +284,8 @@ footer {
 .btn:focus {
     background-color: var(--accent-txt-cl);
     color: var(--white-txt-cl);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 
 .btn-mode-light {
@@ -361,6 +361,8 @@ footer {
     align-items: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
+
+    
 }
 
 .visually-hidden {
@@ -882,7 +884,7 @@ footer {
     visibility: visible;
     pointer-events: initial;
 
-    transition: opacity var(--anim-slow) visibility var(--anim-slow);
+    transition: opacity var(--anim-slow), visibility var(--anim-slow);
 }
 
 .backdrop.is-hidden {
@@ -923,5 +925,7 @@ footer {
     border-radius: 50%;
     margin-top: 8px;
     margin-right: 8px;
+
+    transition: var(--anim-slow);
 
 }
